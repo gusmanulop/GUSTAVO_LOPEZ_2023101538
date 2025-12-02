@@ -1,0 +1,69 @@
+<!DOCTYPE html> 
+<html lang="es"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/dashboard">INICIO</a></li>
+                <li><a href="/smart">LOTES</a></li>
+                <li><a href="/register">PEDIR MAS INFORMACION</a></li>
+            </ul>
+        </nav>
+        <h1>Detalle de Lotes Disponibles</h1>
+        <div class="product-container">
+            <div class="product">
+                <img src="{{ url_for('static', filename='img/ternero.jpg') }}" alt="Producto 1">
+                <h2>Ternero/a: Bovino Joven, generalmente al pie de la madre</h2>
+                <p>Cantidad de lote: 120</p>
+                <p>Precio: 15.000.000 Gs</p>
+                <p class="availability available">Disponible</p>
+            </div>
+            <div class="product">
+                <img src="{{ url_for('static', filename='img/novillito.jpg') }}" alt="Producto 2">
+                <h2>Novillito: Macho castrado de destete hasta aproximadamente los dos años</h2>
+                <p>Cantidad de lote: 120</p>
+                <p>Precio: 30.000.000</p>
+                <p class="availability out-of-stock">Agotado</p>
+            </div>
+                <div class="product">
+                <img src="{{ url_for('static', filename='img/novillo.jpg') }}" alt="Producto 1">
+                <h2>Novillo: Macho castrado de mas de dos años</h2>
+                <p>Cantidad de lote: 120</p>
+                <p>Precio: 45.000.000 Gs.</p>
+                <p class="availability available">Disponible</p>
+            </div>
+            
+            <div class="product">
+                <img src="{{ url_for('static', filename='img/vaquillona.jpg') }}" alt="Producto 1">
+                <h2>Vaquillona: Hembra desde el destete hasta su primera pariacion</h2>
+                <p>Cantidad de lote: 120</p>
+                <p>Precio: 55.000.000 Gs.</p>
+                <p class="availability available">Disponible</p>
+            </div>
+            
+            <div class="product">
+                <img src="{{ url_for('static', filename='img/vaca.jpg') }}" alt="Producto 1">
+                <h2>Vaca: Hembra Adulta</h2>
+                <p>Cantidad de lote: 120</p>
+                <p>Precio: 75.000.000 Gs.</p>
+                <p class="availability available">Disponible</p>
+            </div>
+            
+            <div class="product">
+                <img src="{{ url_for('static', filename='img/toro.jpg') }}" alt="Producto 1">
+                <h2>Toro: Macho entero (no castrado)</h2>
+                <p>Cantidad de lote: 120</p>
+                <p>Precio: 70.000.000 Gs.</p>
+                <p class="availability available">Disponible</p>
+            </div>
+        </div>
+    </body>
+</html>
