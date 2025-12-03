@@ -1,0 +1,10 @@
+//Creamos la base de datos 
+CREATE DATABASE unida;
+//Scrip de la tabla utilizada 
+CREATE TABLE contacto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nombre VARCHAR(100) NOT NULL,
+    correo VARCHAR(150) NOT NULL,
+    celular VARCHAR(20),
+    horario_contacto VARCHAR(50)
+);
